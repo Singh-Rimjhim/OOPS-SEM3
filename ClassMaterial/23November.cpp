@@ -16,7 +16,7 @@
 
 // using a member fxn change the sign of data member 
 //write a c++ program to overload the preincrement operator (++) ,using a member fxn to increase the value of an object by 1. 
-//
+/*
 #include<iostream> 
 using namespace std;
 class Number{
@@ -44,3 +44,30 @@ int main(){
 
     return 0;
 }
+*/
+
+/*
+Binary Operation overloading:-
+It takes 2 operands can be overloaded using member function or friend function, eg. +, -, *, / etc.
+
+Syntax: Binary Operator using member function
+        return_type Operator + (Class Name obj){
+            //Function body
+        }
+
+QUESTION: WAP to overload the binary + operator using a member function to add two complex numbers.
+*/
+
+#include<iostream>
+using namespace std;
+class complex{
+int real, imag;
+public:
+    complex(int r=0, int i=0){
+        real = r;
+        imag = i;
+    }
+    complex operator + (complex c){
+
+    }
+};
